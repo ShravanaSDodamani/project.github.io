@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>form </title>
+    <style>
+        .one{
+            width: 40%;
+            background-color: pink;
+            border: 3px ridge purple;
+            margin-left: 300px;
+            border-radius: 10px;
+        }
+        .two{
+            color: blueviolet;font-family: cursive;
+        }
+        .three{
+            border: 2px solid rgb(226, 43, 128);
+            background-color:white;
+        }
+        .four{
+            font-size: 25px;
+            color: black;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        #six:hover{
+            background-color:palevioletred;
+        }
+        #six{
+            border: 3px double black;
+            margin-left: 300px;
+            border-radius: 10px;
+            font-size: large; font-family: cursive;
+        }
+    </style>
+    
+</head>
+<body>
+    <form action="message.html">
+        <fieldset class="one">
+            <legend class="four">Personal Details</legend>
+            <label for="fname" class="two">First Name</label>
+&nbsp;
+<input type="text" class="three" name="fname" id="fname">
+<br><br>
+
+<label for="mname" class="two">Middle Name</label>
+&nbsp;
+<input type="text" class="three" name="mname" id="mname">
+<br><br>
+
+<label for="lname" class="two">Last Name</label>
+&nbsp;
+<input type="text"  class="three" name="lname" id="lname">
+<br><br>
+
+<label for="email" class="two">Email</label>
+&nbsp;
+<input type="email" class="three" name="email" id="email">
+<br><br>
+
+<label for="dob" class="two">DOB</label>
+&nbsp;
+<input type="date" class="three" name="dob" id="dob">
+<br><br>
+        </fieldset>
+
+        <fieldset class="one">
+            <legend class="four">Educational Details</legend>
+            <label for="" class="two">Department</label>
+    <br><br>
+
+    <input type="radio" id="CS" name="dept">
+    <label  for="CS">CS</label>
+
+    <input type="radio" id="Civil" name="dept">
+    <label  for="Civil">Civil</label>
+
+    <input type="radio" id="EE" name="dept">
+    <label  for="EE">EE</label>
+
+    <br><br>
+    
+    <label for="yop" class="two">YOG</label>
+    <input list="yog" class="three" name="yop" id="yop">
+    <datalist id="yog">
+    <option >2018</option>
+    <option >2019</option>
+    <option >2020</option>
+    <option >2021</option>
+    <option >2022</option>
+    <option >2023</option>
+    
+    </datalist>
+<Br><br>
+        </fieldset>
+        <br>
+        <input type="Submit" id="six">
+    </form>
+    
+</body>
+</html>
